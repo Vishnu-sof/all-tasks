@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <style>
+ #track1,#track2,#track3,#track4,#track5,#track6,#track7,#track8,#track9,#track10{
+    height: 90px;
+    width: 10px;
+    background-color: blue;
+    display: inline-block;
+    animation-name: dance;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    margin:1px;
+    transform-origin: bottom;
+    animation-timing-function:ease-in-out;
+}
+
+body{
+    background-image: url(./audio/animal.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200vh;
+    
+}
+#track1{
+    animation-delay: 0.3s;
+}
+#track2{
+    animation-delay: 0.4s;
+}
+#track3{
+    animation-delay: 0.5s;
+}
+#track4{
+    animation-delay: 0.6s;
+}
+#track5{
+    animation-delay: 0.7s;
+}
+#track6{
+    animation-delay: 0.7s;
+}
+#track7{
+    animation-delay: 0.6s;
+}
+#track8{
+    animation-delay: 0.5s;
+}
+#track9{
+    animation-delay: 0.4s;
+}
+#track10{
+    animation-delay: 0.3s;
+}
+#track5{
+    animation-delay: 0.7s;
+}
+#track6{
+    animation-delay: 0.7s;
+}
+#track7{
+    animation-delay: 0.6s;
+}
+#track8{
+    animation-delay: 0.5s;
+}
+#track9{
+    animation-delay: 0.4s;
+}
+#track10{
+    animation-delay: 0.3s;
+}
+
+
+
+@keyframes dance{
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+#track{
+    position:relative;
+    top: 650px;
+}
+.round > img{
+    height: 120px;
+    width: 120px;
+ position: absolute;    
+    border-radius: 100%;
+    top: 72%;
+    left: 77%;
+    animation-name: rotate;
+    animation-duration:20s;
+    animation-iteration-count: infinite;
+    
+   
+}
+@keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+.aud{
+ 
+    position: relative;
+    top: 95%;
+    left: 67%;
+}
+.aud > audio{
+    width: 450px;
+
+    
+}
+
+
+
+
+
+
+
+    </style>
+
+    
+</head>
+<body>
+    <div id="track" >
+      <div id="track1"></div>
+      <div id="track2"></div>
+      <div id="track3"></div>
+      <div id="track4"></div>
+      <div id="track5"></div>
+      <div id="track6"></div>
+      <div id="track7"></div>
+      <div id="track8"></div>
+      <div id="track9"></div>
+      <div id="track10"></div>
+      <div id="track1"></div>
+      <div id="track2"></div>
+      <div id="track3"></div>
+      <div id="track4"></div>
+      <div id="track5"></div>
+      <div id="track6"></div>
+      <div id="track7"></div>
+      <div id="track8"></div>
+      <div id="track9"></div>
+      <div id="track10"></div>
+      <div id="track1"></div>
+      <div id="track2"></div>
+      <div id="track3"></div>
+      <div id="track4"></div>
+      <div id="track5"></div>
+      <div id="track6"></div>
+      <div id="track7"></div>
+      <div id="track8"></div>
+      <div id="track9"></div>
+      <div id="track10"></div>
+      <div id="track1"></div>
+      <div id="track2"></div>
+      <div id="track3"></div>
+      <div id="track4"></div>
+      <div id="track5"></div>
+      <div id="track6"></div>
+      <div id="track7"></div>
+      <div id="track8"></div>
+      <div id="track9"></div>
+      <div id="track10"></div>
+      <div id="track1"></div>
+      <div id="track2"></div>
+      <div id="track3"></div>
+      <div id="track4"></div>
+      <div id="track5"></div>
+      <div id="track6"></div>
+      <div id="track7"></div>
+      <div id="track8"></div>
+      <div id="track9"></div>
+      <div id="track10"></div>
+    </div>
+
+<div  class="round">
+    <img src="./audio/animal.jpeg">
+
+
+</div>
+<div class="aud">
+<audio controls autoplay>
+    <source src="./audio/Ammayi.mp3">
+</audio>
+</div>
+
+
+
+
+</div>
+    
+</body>
+</html>

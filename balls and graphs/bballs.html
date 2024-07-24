@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #ball1,
+      #ball2,
+      #ball3 {
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 50%;
+        display: inline-block;
+        animation-name: jumping;
+        animation-duration: 2s;
+        margin-top: 200px;
+        animation-iteration-count: infinite;
+        position: relative;
+        left: 130px;
+      }
+      #ball1 {
+        animation-delay: 0.5s;
+        border: solid;
+      }
+      #ball2 {
+        animation-delay: 0.7s;
+        border: solid;
+      }
+      #ball3 {
+        animation-delay: 0.9s;
+        border: solid;
+      }
+      #tex {
+        position: relative;
+        left: 140px;
+        top: 20px;
+        background-color: bisque;
+        width: 100px;
+        padding: 10px;
+        border: solid;
+      }
+      @keyframes jumping {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-50px);
+        }
+      }
+      body {
+        padding: 30px;
+        margin: 30px;
+      }
+      #main {
+        border: solid red;
+        width: 400px;
+      }
+      #dot11,
+      #dot12,
+      #dot13,
+      #dot14,
+      #dot15,
+      #dot16 {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(8, 8, 8);
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        top: 20px;
+        left: 140px;
+        animation-name: loading;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes loading {
+        0% {
+          scale: 0.2;
+        }
+        100% {
+          scale: 0.8;
+        }
+      }
+      #main1 > div {
+        margin: 1px;
+        color: white;
+      }
+      #dot11 {
+        animation-delay: 0.2s;
+      }
+      #dot12 {
+        animation-delay: 0.5s;
+      }
+      #dot13 {
+        animation-delay: 0.7s;
+      }
+      #dot14 {
+        animation-delay: 0.9s;
+      }
+      #dot15 {
+        animation-delay: 1.2s;
+      }
+      #dot16 {
+        animation-delay: 1.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="tex">bouncing ball</div>
+      <div id="ball1"></div>
+      <div id="ball2"></div>
+      <div id="ball3"></div>
+    </div>
+    <div id="main1">
+      <div id="dot11"></div>
+      <div id="dot12"></div>
+      <div id="dot13"></div>
+      <div id="dot14"></div>
+      <div id="dot15"></div>
+      <div id="dot16"></div>
+    </div>
+  </body>
+</html>
